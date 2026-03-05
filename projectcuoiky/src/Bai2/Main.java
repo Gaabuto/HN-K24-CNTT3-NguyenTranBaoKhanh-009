@@ -20,7 +20,6 @@ public class Main {
 
             if( emails[i].trim().matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$") && !emails[i].isEmpty()  ){
                 emailMap.put(count, emails[i].trim());
-                System.out.println("Email hợp lệ: " + emails[i].trim());
                 count++;
             }
         }
@@ -44,5 +43,6 @@ public class Main {
                 .forEach(entry -> System.out.println(entry.getValue()));
     }
 }
+
 
 
